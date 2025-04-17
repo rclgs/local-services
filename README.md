@@ -10,7 +10,7 @@ I also thought that this would simulate a real-world setup where only one instan
 
 ## Understanding
 
-This is how I envisioned it on my mind.
+This is how I envisioned it on my mind. I don't know if this is a feasible setup, but that's the reason for this experimentation.
 
 ```mermaid
 flowchart TB  
@@ -42,11 +42,15 @@ flowchart TB
     KCLK <--> PSQL
 ```
 
-I don't know if this is a feasible setup, but that's the reason for this experimentation.
-
 ## Implementation
 
-TBD
+This experiment will utilize Docker tools and containerization technologies. For local development, it will employ the Docker Desktop application and the Docker Compose tool.
+
+Here are some other tools and applications that I am considering of using (as of Apr 2025) for this experiment:
+
+1. Excalidraw
+2. Keycloak
+3. PostgreSQL
 
 ## Lesson(s) Learned
 
