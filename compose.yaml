@@ -1,0 +1,23 @@
+name: local-infra
+
+services:
+  postgres:
+    image: postgres:17.5
+    restart: unless-stopped
+    # set shared memory limit when using docker compose
+    shm_size: 128mb
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    networks:
+      - local-infra
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  local-infra:
+    external: true
+
+volumes:
+  postgres_data:
