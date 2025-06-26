@@ -1,4 +1,4 @@
-name: local-infra
+name: local-services
 
 services:
   postgres:
@@ -11,12 +11,12 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - local-infra
+      - local-services
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 networks:
-  local-infra:
+  local-services:
     external: true
 
 volumes:
